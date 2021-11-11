@@ -1,0 +1,15 @@
+.ProjectList-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.ProjectList-img {
+  display: block;
+  max-width: 250px;
+  height: 250px;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+}
