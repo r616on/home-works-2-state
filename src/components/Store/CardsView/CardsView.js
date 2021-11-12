@@ -1,9 +1,10 @@
 import React from "react";
 import ShopCard from "../ShopCard/ShopCard";
+import "./CardsView.css";
 
-function CardsView({ cards }) {
+function CardsView({ cards, view }) {
   return (
-    <div className={"CardsView"}>
+    <div className={view === "module" ? "CardsView_module" : "CardsView_list"}>
       {cards.map((item, index) => {
         return (
           <ShopCard
@@ -12,6 +13,7 @@ function CardsView({ cards }) {
             price={item.price}
             color={item.color}
             img={item.img}
+            view={view}
           />
         );
       })}

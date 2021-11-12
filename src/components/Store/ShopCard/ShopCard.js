@@ -1,17 +1,18 @@
 import React from "react";
-import "./ShopCard.css";
+import "./ShopCard.scss";
 
-function ShopCard({ name, price, color, img }) {
+function ShopCard({ name, price, color, img, view }) {
   return (
-    <div className={"ShopCard"}>
+    <div className={`ShopCard ${view}`}>
       <div className={"name"}>{name}</div>
       <div className={"color"}>{color}</div>
-      <div className={"img-row"}>
-        <img className={"img"} src={img} alt="Фото" />
-      </div>
+      <div
+        className={"img-row"}
+        style={{ backgroundImage: `url(${img})` }}
+      ></div>
       <div className={"ShopCard-footer"}>
-        <div className={"price"}> {price}</div>
-        <btn className={"btn"}>Add to cart</btn>
+        <div className={"price"}> {"$" + price}</div>
+        <div className={"btn"}>Add to cart</div>
       </div>
     </div>
   );

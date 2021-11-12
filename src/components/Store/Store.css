@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 *. {
   box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.shop-row {
+}
+.icon-row {
+  text-align: right;
+  margin: 30px;
+  margin-bottom: 20px;
 }
