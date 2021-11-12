@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Toolbar from "../Toolbar/Toolbar";
+import Toolbar from "./Toolbar/Toolbar";
 import "./Portfolio.css";
 import data from "./data.json";
-import ProjectList from "../ProjectList/ProjectList";
+import ProjectList from "./ProjectList/ProjectList";
 
 export class Portfolio extends Component {
   constructor() {
