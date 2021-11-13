@@ -9,7 +9,7 @@ function Dropdown({ arr }) {
         return (
           <li
             key={index}
-            className={active === item.name ? "active" : ""}
+            style={active === item.name ? { color: "#5380f7" } : {}}
             onClick={(e) => {
               e.preventDefault();
               setActive(item.name);
