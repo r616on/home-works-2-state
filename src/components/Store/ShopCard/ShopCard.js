@@ -12,7 +12,7 @@ function ShopCard({ name, price, color, img, view }) {
       ></div>
       <div className={"ShopCard-footer"}>
         <div className={"price"}> {"$" + price}</div>
-        <div className={"btn"}>Add to cart</div>
+        <div className={"btn-card"}>Add to cart</div>
       </div>
     </div>
   );

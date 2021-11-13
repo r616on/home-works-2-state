@@ -8,7 +8,7 @@ function Store() {
   const [view, setView] = useState("module");
 
   return (
-    <div className={"container"}>
+    <div className={"container-Store"}>
       <div className={"icon-row"}>
         <IconSwitch
           icon={view === "module" ? "view_list" : "view_module"}
