@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ShopCard.scss";
 
 function ShopCard({ name, price, color, img, view }) {
@@ -17,5 +18,18 @@ function ShopCard({ name, price, color, img, view }) {
     </div>
   );
 }
-
+ShopCard.propTypes = {
+  name: PropTypes.string,
+  price: PropTypes.string,
+  color: PropTypes.string,
+  img: PropTypes.string,
+  view: PropTypes.string,
+};
+ShopCard.defaultProps = {
+  name: "Nike Metcon 2",
+  price: "130",
+  color: "red",
+  img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/1.jpg",
+  view: "module",
+};
 export default ShopCard;

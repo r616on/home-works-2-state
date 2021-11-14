@@ -6,19 +6,19 @@ import CardsView from "./CardsView/CardsView";
 
 function Store() {
   const [view, setView] = useState("module");
-
+  const onSwitch = () => {
+    if (view === "module") {
+      setView("list");
+    } else {
+      setView("module");
+    }
+  };
   return (
     <div className={"container-Store"}>
       <div className={"icon-row"}>
         <IconSwitch
           icon={view === "module" ? "view_list" : "view_module"}
-          onSwitch={() => {
-            if (view === "module") {
-              setView("list");
-            } else {
-              setView("module");
-            }
-          }}
+          onSwitch={onSwitch}
         />
       </div>
       <div className={"shop-row"}>

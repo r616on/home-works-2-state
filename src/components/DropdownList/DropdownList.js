@@ -16,7 +16,7 @@ function DropdownList() {
       <div className="container">
         <div
           data-id="wrapper"
-          className={`dropdown-wrapper ${dropdownOpen ? "open" : ""}  `}
+          className={`dropdown-wrapper ${dropdownOpen ? "open" : null}  `}
         >
           <button
             data-id="toggle"
