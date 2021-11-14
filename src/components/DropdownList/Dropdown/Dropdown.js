@@ -16,9 +16,9 @@ function Dropdown({ arr }) {
     arrIndex = null;
   }
   return (
-    <ul data-id="dropdown" className="dropdown">
-      {arrIndex &&
-        arrIndex.map((item) => {
+    arrIndex && (
+      <ul data-id="dropdown" className="dropdown">
+        {arrIndex.map((item) => {
           return (
             <li
               key={item.id}
@@ -32,7 +32,8 @@ function Dropdown({ arr }) {
             </li>
           );
         })}
-    </ul>
+      </ul>
+    )
   );
 }
 

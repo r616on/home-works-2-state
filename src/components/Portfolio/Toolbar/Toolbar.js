@@ -15,10 +15,10 @@ function Toolbar(props) {
     itemIndex = null;
   }
   return (
-    <div className={"Toolbar"}>
-      <div className={"filters-row"}>
-        {itemIndex &&
-          itemIndex.map((item) => {
+    itemIndex && (
+      <div className={"Toolbar"}>
+        <div className={"filters-row"}>
+          {itemIndex.map((item) => {
             return (
               <div
                 key={item.id}
@@ -31,8 +31,9 @@ function Toolbar(props) {
               </div>
             );
           })}
+        </div>
       </div>
-    </div>
+    )
   );
 }
 Toolbar.propTypes = {

@@ -15,9 +15,11 @@ function CardsView({ cards, view }) {
     cardsIndex = null;
   }
   return (
-    <div className={view === "module" ? "CardsView_module" : "CardsView_list"}>
-      {cardsIndex &&
-        cardsIndex.map((item) => {
+    cardsIndex && (
+      <div
+        className={view === "module" ? "CardsView_module" : "CardsView_list"}
+      >
+        {cardsIndex.map((item) => {
           return (
             <ShopCard
               key={item.id}
@@ -29,7 +31,8 @@ function CardsView({ cards, view }) {
             />
           );
         })}
-    </div>
+      </div>
+    )
   );
 }
 CardsView.propTypes = {

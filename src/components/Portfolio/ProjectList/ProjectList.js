@@ -15,9 +15,9 @@ function ProjectList(props) {
   }
 
   return (
-    <div className={"ProjectList-row"}>
-      {itemIndex &&
-        itemIndex.map((item) => {
+    itemIndex && (
+      <div className={"ProjectList-row"}>
+        {itemIndex.map((item) => {
           if (item.value.category === props.filter || props.filter === "All") {
             return (
               <img
@@ -31,7 +31,8 @@ function ProjectList(props) {
             return null;
           }
         })}
-    </div>
+      </div>
+    )
   );
 }
 ProjectList.propTypes = {
